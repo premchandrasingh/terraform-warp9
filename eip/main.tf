@@ -7,6 +7,7 @@ resource "aws_instance" "ec2" {
     instance_type = "t2.micro"
 }
 
+# ref - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eip.html
 resource "aws_eip" "elasticeip" {
     instance = aws_instance.ec2.id
 }
