@@ -8,6 +8,7 @@ resource "aws_instance" "ec2" {
     security_groups = [aws_security_group.webtraffic.name]
 }
 
+# Ref - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group.html
 resource "aws_security_group" "webtraffic" {
     name = "Allow HTTPS"
 
