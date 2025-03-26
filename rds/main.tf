@@ -1,7 +1,7 @@
 provider "aws" {
     region = "eu-west-2"
 }
-
+// ref (prem) - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/db_instance.html
 resource "aws_db_instance" "myRDS" {
     db_name = "myDB"
     identifier = "my-first-rds"
